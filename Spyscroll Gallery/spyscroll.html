@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    height: 100%;
+    position: fixed;
+    left: 7px;
+    width: 21%;
+    text-align: right;
+    border-right: 1px solid lightgray;
+    background-color: white;
+  }
+  .nav-pills>li.active>a{
+        color: #fff;
+    background-color: #337ab7;
+    border-right: 3px solid gold;
+    border-radius: 0;
+    border-left: 3px solid gold;
+
+  }
+  div.col-sm-10 div {
+    height: 630px;
+    font-size: 28px;
+  }
+  .category{
+        height: 249px !important;
+    width: 296px;
+    margin:5px;
+        box-shadow: 0px 0px 22px 1.1px;
+    display: inline-block;
+  }
+  .category img{
+    height: 100%;
+    width: 100%;
+    padding:5px;
+  }
+  .category img:hover{
+    transform: scale(1.05);
+    transition: all .2s ;
+  }
+  /*#section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section41 {color: #fff; background-color: #00bcd4;}
+  #section42 {color: #fff; background-color: #009688;}*/
+  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+      margin-left: 150px;
+    }
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-2" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Greenery</a></li>
+        <li><a href="#section2">Weapons</a></li>
+        <li><a href="#section3">Flowers</a></li>
+        <li><a href="#section4">Buldings</a></li>
+      </ul>
+    </nav>
+    <div class="col-sm-10">
+      <div id="section1"> 
+      <h1>GREENERY</h1>   
+        <div class="category">
+          <img src="image\g1.jpg">
+        </div>
+        <div class="category">
+          <img src="image\g7.jpg">
+        </div>
+        <div class="category">
+          <img src="image\g3.jpg">
+        </div>
+        <div class="category">
+          <img src="image\g4.jpg">
+        </div>
+        <div class="category">
+          <img src="image\g1.jpg">
+        </div>
+        <div class="category">
+          <img src="image\g6.jpg">
+        </div>
+      </div>
+      <div id="section2"> 
+        <h1>WEAPONS</h1>   
+        <div class="category">
+          <img src="image\w1.jpg">
+        </div>
+        <div class="category">
+          <img src="image\w2.jpg">
+        </div>
+        <div class="category">
+          <img src="image\w3.jpg">
+        </div>
+        <div class="category">
+          <img src="image\w6.jpg">
+        </div>
+        <div class="category">
+          <img src="image\w5.jpg">
+        </div>
+        <div class="category">
+          <img src="image\w7.jpg">
+        </div>
+      </div>        
+      <div id="section3">         
+        <h1>FLOWERS</h1>
+        <div class="category">
+          <img src="image\f1.jpg">
+        </div>
+        <div class="category">
+          <img src="image\f2.jpg">
+        </div>
+        <div class="category">
+          <img src="image\f3.jpg">
+        </div>
+        <div class="category">
+          <img src="image\f4.jpg">
+        </div>
+        <div class="category">
+          <img src="image\f5.jpg">
+        </div>
+        <div class="category">
+          <img src="image\f6.jpg">
+        </div>
+      </div>
+      <div id="section4">         
+        <h1>Buldings</h1>
+         <div class="category">
+          <img src="image\b1.jpg">
+        </div>
+        <div class="category">
+          <img src="image\b2.jpg">
+        </div>
+        <div class="category">
+          <img src="image\b3.jpg">
+        </div>
+        <div class="category">
+          <img src="image\b4.jpg">
+        </div>
+        <div class="category">
+          <img src="image\b5.jpg">
+        </div>
+        <div class="category">
+          <img src="image\b6.jpg">
+        </div>
+      </div>                    
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
